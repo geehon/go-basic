@@ -1,6 +1,6 @@
 package typefloat
 
 func ExamplePrintFloat() {
-    PrintFloat()
-    // Output: 12.40
+	PrintFloat()
+	// Output: 12.40
 }
