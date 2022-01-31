@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"geehon.top/basic/array"
-	"geehon.top/basic/variable/typefloat"
-	"geehon.top/basic/variable/typeint"
-	"geehon.top/basic/variable/typepointer"
-	"geehon.top/basic/variable/typestring"
+	"github.com/geehon/go-basic/array"
+	"github.com/geehon/go-basic/variable/typefloat"
+	"github.com/geehon/go-basic/variable/typeint"
+	"github.com/geehon/go-basic/variable/typepointer"
+	"github.com/geehon/go-basic/variable/typestring"
 )
 
 func learnVariable() {
@@ -15,11 +15,13 @@ func learnVariable() {
 	typefloat.PrintFloat()
 	typepointer.PrintPointer()
 }
-func createLine() {
-	fmt.Println("\n==============================================")
+
+func createLine(str string) {
+	fmt.Printf("=================== %s ===================\n", str)
 }
+
 func main() {
 	learnVariable()
-	createLine()
+	createLine("print array")
 	array.PrintArray()
 }

@@ -10,5 +10,5 @@ func getPointer() (int, *int) {
 
 func PrintPointer() {
 	_, pointer := getPointer()
-	fmt.Printf("指针指向地址的存储的值是:%d", *pointer)
+	fmt.Printf("指针指向地址的存储的值是:%d\n", *pointer)
 }
