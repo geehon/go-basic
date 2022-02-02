@@ -37,4 +37,6 @@ func main() {
 	fmt.Println("调用4次后计数器值：", f(1))
 	createLine("defer demo")
 	helpfunc.DeferDemo()
+	createLine("builtin string function")
+	helpfunc.StringBuiltin()
 }
