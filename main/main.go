@@ -8,7 +8,6 @@ import (
 	"github.com/geehon/go-basic/variable/typeint"
 	"github.com/geehon/go-basic/variable/typepointer"
 	"github.com/geehon/go-basic/variable/typestring"
-	"github.com/geehon/go-starter/structdemo"
 )
 
 func learnVariable() {
@@ -40,5 +39,4 @@ func main() {
 	helpfunc.DeferDemo()
 	createLine("builtin string function")
 	helpfunc.StringBuiltin()
-	structdemo.StructDedmo()
 }
