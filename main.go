@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/geehon/go-basic/array"
+	"github.com/geehon/go-basic/goroutine"
 	"github.com/geehon/go-basic/helpfunc"
 	"github.com/geehon/go-basic/interf"
 	"github.com/geehon/go-basic/method"
@@ -45,4 +46,9 @@ func main() {
 	method.Demo()
 	createLine("interface in Go")
 	interf.DemoInterface()
+	createLine("goroutine and channel")
+	goroutine.Demo1()
+	goroutine.Demo2()
+	goroutine.Demo3()
+	goroutine.Demo4()
 }
