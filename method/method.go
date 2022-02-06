@@ -27,6 +27,20 @@ func Demo() {
 	fmt.Println("其他自定义类型的方法")
 	testStr := upperString("Hello go")
 	fmt.Println(testStr.Upper())
+
+	// 结构体嵌套
+	var xiaoMing = Student{
+		people: People{
+			gender: "flame",
+			age:    13,
+			name:   "xiaoMing",
+			height: 135,
+			weight: 40,
+		},
+		class: "四年二班",
+		addr:  "北京朝阳区",
+	}
+	fmt.Println(xiaoMing)
 }
 
 type Employee struct {
@@ -57,4 +71,21 @@ type upperString string
 // Upper go无法实现在不改变地址的情况下改变字符串的内容
 func (s upperString) Upper() string {
 	return strings.ToUpper(string(s))
+}
+
+// TODO: 方法的重载
+
+type People struct {
+	gender string
+	age    int
+	name   string
+	height float64
+	weight float64
+}
+
+// Student 结构体嵌套
+type Student struct {
+	people People
+	class  string
+	addr   string
 }

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/geehon/go-basic/array"
 	"github.com/geehon/go-basic/helpfunc"
+	"github.com/geehon/go-basic/interf"
 	"github.com/geehon/go-basic/method"
 	"github.com/geehon/go-basic/variable/typefloat"
 	"github.com/geehon/go-basic/variable/typeint"
@@ -42,4 +43,6 @@ func main() {
 	helpfunc.StringBuiltin()
 	createLine("use method in go")
 	method.Demo()
+	createLine("interface in Go")
+	interf.DemoInterface()
 }
