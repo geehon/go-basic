@@ -1,3 +1,3 @@
 module github.com/geehon/go-basic
 
-go 1.15
+go 1.18
