@@ -4,5 +4,5 @@ import "fmt"
 
 func PrintFloat() {
 	a := 12.4
-	fmt.Printf("%.2f", a)
+	fmt.Printf("%.2f\n", a)
 }

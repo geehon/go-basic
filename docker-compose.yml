@@ -1,0 +1,26 @@
+version: '3,7'
+services:
+    mysql:
+        image: 'mysql/mysql-server:8.0'
+        ports:
+            - '3306:3306'
+        environment:
+            MYSQL_ROOT_PASSWORD: root_pass
+            MYSQL_ROOT_HOST: "%"
+            MYSQL_DATABASE: go_basic_db
+            MYSQL_USER: go_basic_user
+            TZ: Asia/Shanghai
+            MYSQL_PASSWORD: go_basic_password
+            MYSQL_ALLOW_EMPTY_PASSWORD: 1
+        volumes:
+            - 'go-mysql:/var/lib/mysql'
+        networks:
+            - db_net
+
+networks:
+    db_net:
+        driver: bridge
+
+volumes:
+    go-mysql:
+        driver: local
